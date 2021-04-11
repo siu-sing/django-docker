@@ -31,7 +31,7 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS","localhost").split(" ")
 # Application definition
 
 INSTALLED_APPS = [
-    'scheduler',
+    'myapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/scheduler/templates'],
+        'DIRS': ['/myapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
